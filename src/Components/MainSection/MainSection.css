@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-box{
+    /* border: 2px solid black; */
+    width: 90%;
+    margin:50px auto;
+    text-align: center;
+}
+.main-heading{
+    padding: 20px;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.703);
+    color: white;
+}
+.ip-box{
+    /* border: 2px solid rgb(0, 38, 255); */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+}
+.ip-box label{
+ font-size: 25px;
+ margin:0px 7px ;
+ color: white;
+}
+.ip{
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ip-rating{
+    width: 70px;
+}
+
+.card-box{
+    padding: 20px;
+    /* border: 2px solid rgb(221, 255, 0); */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.card{
+    /* border: 2px solid rgb(0, 255, 242); */
+    text-align: left;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.703);
+    border-radius:10px ;
+    transition: 0.2s ease-in;
+    background: white;
+}
+.card:hover{
+    scale: 102%;
+    cursor: pointer;
+}
+.card-top{
+    /* border: 2px solid blueviolet; */
+    padding: 20px;
+}
+.card-bot{
+    /* border: 2px solid orange; */
+    padding: 20px;
+    background: rgb(243,244,246);
+    border-radius:10px ;
+}
+.restro-name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.restro-address{
+     margin: 5px 0px;
+     font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.restro-codes{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+.restro-codes span{
+    margin:0px 5px ;
+}
+.restro-type{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+.visit-menu{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+.visit-menu a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .restro-name{
+        font-size: 20px;
+    }
+    .restro-address{
+       font-size: 15px;
+   }
+   .restro-codes{
+    font-size: 15px;
+   }
+   .restro-codes span{
+    font-size: 15px;
+   }
+   .restro-type{
+    font-size: 15px;
+   }
+   .visit-menu{
+    font-size: 15px;
+   }
+   .ip-box label{
+    font-size: 20px;
+   }
+}
+
+@media screen and (max-width:768px) {
+  .card-box{
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width:700px) {
+    .ip-box{
+        flex-direction: column;
+    }
+    .ip-name-box{
+        margin: 10px 0px;
+    }
+  }
+  
+
+@media screen and (max-width:500px) {
+    .main-heading{
+font-size:25px ;
+    }
+    .card-box{
+      grid-template-columns: auto;
+    }
+    .ip-box label{
+        margin: 7px 0px;
+    }
+    .ip-name{
+        width: 90%;
+    }
+  }
